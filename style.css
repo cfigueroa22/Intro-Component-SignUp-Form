@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas: "first second";
+  column-gap: 40px;
+  margin: 30em 8em;
+}
+
+.first-container {
+  grid-area: first;
+}
+
+.first-text {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: white;
+  font-weight: 700;
+}
+
+.second-text {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.second-container {
+  grid-area: second;
+  margin: 0 2em;
+  border: 1px solid white;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.form {
+  display: grid;
+  grid-template-areas: "firstName" "lastName" "email" "password" "button";
+}
+
+.first-name {
+  grid-area: firstName;
+}
+
+.last-name {
+  grid-area: lastName;
+}
+
+.email {
+  grid-area: email;
+}
+
+.password {
+  grid-area: password;
+}
+
+.button {
+  grid-area: button;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  font-weight: 500;
+}
